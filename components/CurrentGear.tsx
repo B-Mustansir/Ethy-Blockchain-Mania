@@ -57,6 +57,7 @@ export default function CurrentGear({
         {/* Currently equipped player */}
         <div style={{ outline: "1px solid grey", borderRadius: 16 }}>
           {playerNft && (
+            // @ts-ignore
             <ThirdwebNftMedia metadata={playerNft?.metadata} height={256} />
           )}
         </div>
